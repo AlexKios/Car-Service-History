@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <DatePicker
+          android:id="@+id/datePicker1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="48dp"
+          android:layout_centerHorizontal="true"
+          android:datePickerMode="spinner"
+          android:calendarViewShown="false"/>
+    <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="250dp"
+         android:layout_centerHorizontal="true"
+         android:textSize="45px"
+         android:textStyle="bold"
+         android:textColor="#000000"
+         android:text="Please enter the kilometers you have driven"
+        />
+    <EditText
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        android:hint="200000"
+        android:id="@+id/notes_km" />
+    <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="330dp"
+         android:layout_centerHorizontal="true"
+         android:textSize="45px"
+         android:textStyle="bold"
+         android:textColor="#000000"
+         android:text="Please enter notes"
+        />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Oil change, New headlights"
+        android:id="@+id/notes" />
+    <Button
+         android:id="@+id/save_notes"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/notes"
+         android:layout_marginTop="50dp"
+         android:layout_centerHorizontal="true"
+         android:text="Save"
+         android:onClick="onSaveInfo"/>
+   </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/db1_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/saveUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10px"
+            android:layout_marginBottom="6px"
+            android:onClick="onSaveUpdate"/>
+
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="201dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:autoSizeTextType="uniform"
+            android:text="Enter kilometers"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/updatedkm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="200000"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textview_second"
+            android:layout_width="201dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            android:autoSizeTextType="uniform"
+            android:text="Enter note"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/updatedNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:ems="10"
+            android:hint="Oil change"
+            android:inputType="textMultiLine"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

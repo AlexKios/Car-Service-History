@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+         android:id="@+id/noteCarModel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="60dp"
+         android:layout_centerHorizontal="true"
+         android:text="Car Model"
+         android:textSize="40dp"
+         android:textStyle="bold"
+         android:textColor="#000000"/>
+    <TextView
+         android:id="@+id/noteDate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="110dp"
+         android:layout_centerHorizontal="true"
+         android:text="10/10/2020"
+         android:textSize="40dp"
+         android:textStyle="bold"
+         android:textColor="#000000"/>
+    <TextView
+         android:id="@+id/noteKm"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="160dp"
+         android:layout_centerHorizontal="true"
+         android:text="200000"
+         android:textSize="40dp"
+         android:textStyle="bold"
+         android:textColor="#000000"/>
+    <TextView
+         android:id="@+id/note"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="300dp"
+         android:layout_centerHorizontal="true"
+         android:text="Oil change, new lamp"
+         android:textSize="25dp"
+         android:textColor="#000000"/>
+    <Button
+         android:id="@+id/previous"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="230dp"
+         android:text="Previous note"
+         android:onClick="previousNote"/>
+    <Button
+         android:id="@+id/next"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/viewNotesList"
+         android:layout_marginStart="5dp"
+         android:layout_marginTop="230dp"
+         android:text="Next note"
+         android:onClick="nextNote"/>
+    <Button
+         android:id="@+id/viewNotesList"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/previous"
+         android:layout_marginStart="5dp"
+         android:layout_marginTop="230dp"
+         android:text="View all notes"
+         android:onClick="onViewAllNotes"/>
+    <Button
+         android:id="@+id/updateNote"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/deleteNote"
+         android:layout_marginStart="5dp"
+         android:layout_marginTop="550dp"
+         android:text="Update note"
+         android:onClick="updateNote"/>
+    <Button
+         android:id="@+id/deleteNote"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/addNewNote"
+         android:layout_marginStart="5dp"
+         android:layout_marginTop="550dp"
+         android:text="Delete note"
+         android:onClick="onDeleteNote"/>
+    <Button
+         android:id="@+id/addNewNote"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="550dp"
+         android:text="Add new note"
+         android:onClick="addNote"/>
+     
+</RelativeLayout>

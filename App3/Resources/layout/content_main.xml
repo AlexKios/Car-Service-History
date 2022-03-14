@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+    <TextView
+        android:id="@+id/modelAndYear"
+        android:text="Opel Zafira 2002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="75px"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:text="Engine type"
+            android:textColor="#000000"/>
+
+     <TextView
+            android:id="@+id/engine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="130dp"
+            android:text="1000"
+            android:textColor="#000000"/>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="170dp"
+            android:text="Kilometers driven"
+            android:textColor="#000000"/>
+    <TextView
+            android:id="@+id/km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="200dp"
+            android:text="1000"
+            android:textColor="#000000"/>
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="240dp"
+            android:text="Last oil change kilometers"
+            android:textColor="#000000"/>
+
+     <TextView
+            android:id="@+id/oilKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="270dp"
+            android:text="1000"
+            android:textColor="#000000"/>
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="310dp"
+            android:text="Date of last oil change"
+            android:textColor="#000000"/>
+    <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="340dp"
+            android:text="1000"
+            android:textColor="#000000"/>
+
+    <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="380dp"
+            android:text="Current tyres"
+            android:textColor="#000000"/>
+    <TextView
+            android:id="@+id/tyres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="410dp"
+            android:text="1000"
+            android:textColor="#000000"/>
+
+    <Button
+         android:id="@+id/update"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/shownote"
+         android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+         android:layout_marginTop="500dp"
+         android:onClick="onClick"
+         android:text="Update car"/>
+    <Button
+        android:id="@+id/delete"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="500dp"
+         android:onClick="Delete"
+         android:text="Delete car"/>
+     <Button
+        android:id="@+id/shownote"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/delete"
+         android:layout_marginStart="5dp"
+         android:layout_marginTop="500dp"
+         android:onClick="Show"
+         android:text="Show notes"/>
+</RelativeLayout>
