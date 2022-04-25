@@ -18,6 +18,8 @@ namespace App3
         EditText note, km;
         Button save;
         DataBaseNotes dataBaseNotes = new DataBaseNotes();
+        Database cars = new Database();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -39,9 +41,14 @@ namespace App3
       
         private async void onSaveUpdate(Object sender, EventArgs e)
         {
+            var carList = cars.GetTable().ToList();
             if (note.Text == "")
             {
                 Toast.MakeText(this, "No note entered", ToastLength.Long).Show();
+            }
+            else if (km.Text == "" || Convert.ToInt32(km.Text) < Convert.ToInt32(carList[Choose_Car.GetId()].Km))
+            {
+                Toast.MakeText(this, "Incorrect kilometers", ToastLength.Long).Show();
             }
             else
             {
