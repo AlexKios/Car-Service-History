@@ -3,7 +3,6 @@
 ## Overview  
 **Vehicle Service History** is a lightweight, cross-platform mobile app built with Xamarin and SQLite that helps car owners track and plan routine maintenance. Whether you own one car or a fleet, it keeps a clear, chronological log of every oil change, tyre swap, repair or inspection—and reminds you when it’s due.
 
----
 
 ## Features
 
@@ -30,8 +29,6 @@
     - **Cars** table for vehicle records  
     - One **Notes** database per car for its maintenance entries  
 
----
-
 ## Technologies & Plugins
 
 - **Xamarin.Android** (C#)  
@@ -39,7 +36,6 @@
 - **Plugin.LocalNotification** for cross-platform local reminders  
 - **Xamarin.Essentials** for platform utilities  
 
----
 
 ## Architecture
 
@@ -62,7 +58,6 @@
    - Lists all cars in a TableLayout  
    - “Select” button tags each row to set the `currentCarId`  
 
----
 
 ## Data Model
 
