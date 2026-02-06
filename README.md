@@ -86,15 +86,7 @@ Getting Started
     Prerequisites
         Visual Studio 2022 with Xamarin workload
         Android SDK (API 21+)
-    Clone & Build
-    git clone https://github.com/your-username/vehicle-service-history.git
-    cd vehicle-service-history
-    open VehicleServiceHistory.sln
-    Run on Device / Emulator
-        Set MainActivity as startup project
-        Deploy to Android emulator or physical device
 Usage
-    First Launch → App prompts you to Add Car
     Fill in vehicle details and tap Save
     Back on Home, tap Show Notes to view or add service entries
     Use navigation drawer to switch cars or add new ones
